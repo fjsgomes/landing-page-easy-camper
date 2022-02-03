@@ -24,18 +24,13 @@ body {
   width: 100%;  
   position: absolute;
   justify-content: space-between;  
-  padding: 0px 122px 0px 122px;
-}
-
-.header__cube {  
-  margin-top: 40px;
+  padding: 40px 122px 0px 122px;
 }
 
 .header-login {
   display: flex;
   height: 53px;
-  width: 86px;
-  margin-top: 30px;
+  width: 86px;  
   border-radius: 26.5px;
   background-color: var(--color1)
 }
@@ -53,7 +48,7 @@ body {
   margin-left: 10px;
 }
 
-.section__one {
+.section-top {
   display: flex;
   width: 100%;
   height: 650px;
