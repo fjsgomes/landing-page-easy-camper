@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
@@ -9,6 +9,7 @@
 :root {
   --white: #ffffff;
   --orange: #F78065;
+  --gray: #848484;
 
   --montserrat: 'Montserrat', sans-serif;
   --merriweather: 'Merriweather', arial;
@@ -27,7 +28,7 @@ body {
   padding: 40px 122px 0px 122px;
 }
 
-.header__login {
+.header-login {
   display: flex;
   height: 53px;
   width: 86px;  
@@ -35,20 +36,20 @@ body {
   background-color: var(--white)
 }
 
-.header__login-icon {  
+.header-login__icon {  
   height: 1rem;
   margin-top: 15.58px;
   margin-left: 1rem;
   padding-top: 9px;  
 }
 
-.header__login-img {  
+.header-login__img {  
   height: 2rem;
   margin-top: 10px;
   margin-left: 10px;
 }
 
-.section__top { 
+.section-top { 
   display: flex;
   width: 100%;
   height: 650px;
@@ -104,4 +105,73 @@ body {
   font-family: var(--montserrat);
   font-size: 18px;
   color: var(--white);
+}
+
+/* SECOND PART */
+
+.services {
+  display: flex;    
+  width: 100%;  
+  /* height: 550px; */
+  padding: 400px 81px 50px 119px;
+  border: 1px solid red;
+}
+
+/* .services > .contents {
+  width: 100%;
+  margin: auto;
+} */
+
+.contents {
+  width: 100%;
+  width: 387px;
+  /* height: 450px; */
+  margin: 0px 41px 0px 0px;
+  /* margin-top: 50px; */  
+  /* margin-left: 119px; */
+  /* border: 1px solid blue; */
+}
+
+.text {
+  margin-top: 4rem;
+}
+
+.text__title {
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30.17px;
+}
+
+.text__p-gray {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: var(--gray);
+  /* margin-top: 1.2rem; */
+}
+
+.text__p-orange {
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: var(--orange);
+  /* margin-top: 1.2rem; */
+}
+
+.img__girl {
+  width: 247,5px;
+  height: 180px;
+}
+
+.img__map {
+  width: 208,98px;
+  height: 161,85px;
+}
+
+.img__geo {
+  width: 252,89px;
+  height: 180px;
 }
