@@ -112,8 +112,7 @@ body {
 .services {
   display: flex;    
   width: 100%;  
-  padding: 400px 81px 50px 119px;
-  border: 1px solid red;
+  padding: 400px 81px 50px 119px;  
 }
 
 .contents {
