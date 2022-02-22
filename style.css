@@ -105,9 +105,10 @@ body {
 }
 
 .box-button__text {
-  margin-left: 8px;
   font-family: var(--montserrat);
+  font-weight: 700;  
   font-size: 18px;
+  margin-left: 8px;
   color: var(--white);
 }
 
@@ -115,7 +116,8 @@ body {
 
 .services {
   display: flex;    
-  width: 100%;  
+  width: 100%;
+  justify-content: space-between;
   padding: 0px 81px 0px 119px;
   margin: 400px 0px 50px 0px;  
 }
@@ -148,7 +150,7 @@ body {
   font-family: var(--montserrat);
   font-weight: 700;
   font-size: 18px;
-  line-height: 21.94px;  
+  line-height: 21.94px;
 }
 
 .img__girl {
