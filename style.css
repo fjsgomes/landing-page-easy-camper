@@ -53,7 +53,7 @@ body {
   display: flex;
   width: 100%;
   height: 650px;
-  background: url("img/main-image.png") center/cover;
+  background: url("img/main-image.png") center/cover;  
 }
 
 .box {  
@@ -119,12 +119,11 @@ body {
   width: 100%;
   justify-content: space-between;
   padding: 0px 81px 0px 119px;
-  margin: 400px 0px 50px 0px;
+  margin: 400px 0px 150px 0px;  
 }
 
-.contents {
-  width: 100%;
-  width: 387px;  
+.contents {  
+  width: 387px;
   margin: 0px 41px 0px 0px;  
 }
 
@@ -170,6 +169,43 @@ body {
 
 /* THIRD PART */
 
-.descriptions {
+.section-description {
+  display: flex;
+  width: 100%;  
+  flex-direction: column;  
+  padding: 0px 81px 0px 119px;
+  margin: 0px 0px 50px 0px;  
   border: 1px solid red;
+}
+
+.description__title {
+  display: flex;  
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45.25px;  
+  margin-top: 0;
+  border: 1px solid purple;
+}
+
+.description-container {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 275px; */
+  border: 1px solid blue;
+}
+
+.description {
+  width: 275px;
+  /* flex-direction: column; */
+  padding-right: 15px;
+  padding-top: 60px;
+  /* border: 1px solid yellow; */
+}
+
+.img__list, .img__check,
+.img__build, .img__calendar  {
+  width: 32px;
+  height: 32px;
 }
