@@ -1,0 +1,76 @@
+.section-community {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;  
+  padding: 0px 81px 0px 119px;
+  margin: 200px 0px 200px 0px;  
+}
+
+.community-container {
+  display: flex;
+}
+
+.community-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 310px;
+  margin-right: 127px;
+}
+
+.community__title {  
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45.25px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.community__contents {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* .community__content {    
+  flex-direction: column;
+} */
+
+.text-community {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.community-button {
+  display: flex;
+  width: 250px;
+  height: 65px;  
+  padding: 20.5px 0px 0px 85px;
+  margin-top: 30px;
+  background: var(--orange);
+  border: var(--orange);  
+}
+
+.community-button__play {
+  width: 14.15px;
+  height: 12.36px;
+  margin-top: 5px;
+}
+
+.community-button__text {
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 8px;
+  color: var(--white);
+}
+
+.img_lucciano,
+.img_cremonesi,
+.img_beneventi {
+  width: 230px;
+  height: 418px;
+}
