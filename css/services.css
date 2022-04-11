@@ -3,13 +3,11 @@
   width: 100%;
   justify-content: space-between;
   padding: 0px 81px 0px 119px;
-  margin: 400px 0px 0px 0px;
-  /* border: 1px solid purple; */
+  margin: 400px 0px 0px 0px;  
 }
 
 .contents {  
-  width: 387px;
-  margin: 0px 41px 0px 0px;  
+  width: 395px;  
 }
 
 .container-text {

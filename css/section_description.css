@@ -1,13 +1,9 @@
 .section-description {
-  display: flex;
-  width: 100%;  
-  flex-direction: column;  
   padding: 0px 81px 0px 119px;
   margin: 150px 0px 0px 0px;  
 }
 
-.description__title {
-  display: flex;
+.description__title {  
   font-family: var(--merriweather);
   font-weight: 700;
   font-size: 36px;
@@ -18,17 +14,22 @@
 .description-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 90px;
 }
 
 .description {
   width: 315px;
-  padding-right: 15px;
-  padding-top: 90px;
+  height: 100%;
+}
+
+.description-texts {
+  display: flex;
+  flex-direction: column;  
+  padding-top: 50px;
 }
 
 .img__list, .img__check,
 .img__build, .img__calendar  {
   width: 32px;
-  height: 32px;
-  margin-bottom: 50px;
+  height: 32px;  
 }

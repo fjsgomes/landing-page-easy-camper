@@ -3,7 +3,7 @@
   width: 100%;
   flex-wrap: wrap;
   flex-direction: column;  
-  padding: 0px 81px 0px 119px;
+  padding: 0px 110px 0px 119px;
   margin: 200px 0px 200px 0px;  
 }
 
@@ -34,10 +34,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/* .community__content {    
-  flex-direction: column;
-} */
 
 .text-community {
   margin-top: 10px;

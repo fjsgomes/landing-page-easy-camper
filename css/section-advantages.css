@@ -1,0 +1,40 @@
+.section-advantages {
+  width: 100%;    
+  padding: 0px 110px 0px 119px;
+  margin: 200px 0px 200px 0px;
+}
+
+.advantages__title {  
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45.25px;
+  margin-top: 0;
+}
+
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-description {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 70px;  
+}
+
+.advantages-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.img__doublesquare,
+.img__books,
+.img__magnifying  {
+  width: 32px;
+  height: 32px;  
+}
