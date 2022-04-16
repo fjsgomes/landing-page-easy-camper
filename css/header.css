@@ -1,5 +1,5 @@
 .header {
-  display: flex;
+  display: flex;  
   width: 100%;  
   position: absolute;
   justify-content: space-between;  
@@ -27,9 +27,21 @@
   margin-left: 10px;
 }
 
-.section-top { 
-  display: flex;
-  width: 100%;
-  height: 650px;
-  background: url("../img/main-image.png") center/cover;
+@media (max-width: 992px) {
+  .header {    
+    padding: 40px 40px 0px 40px;
+  }
+
+  .header-login {
+    width: 80px;
+    height: 50px;
+  }
+  
+  .header-login__icon {      
+    margin-top: 14px;
+  }
+  
+  .header-login__img {  
+    height: 1.8rem;
+  }
 }
