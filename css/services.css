@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 81px 0px 119px;
-  margin: 100px 0px 0px 0px;  
+  margin: 80px 0px 0px 0px;
 }
 
 .contents {
@@ -48,7 +48,7 @@
 
 .img__map {
   width: 222.82px;
-  height: 161.85px;
+  height: 180px;
 }
 
 .img__geo {
@@ -59,9 +59,9 @@
 @media (max-width: 992px) {	
   .services {
     padding: 0px 40px 0px 40px;
-    margin: 10px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
   }
-  
+
   .container-text {  
     margin-top: 2rem;
   }
