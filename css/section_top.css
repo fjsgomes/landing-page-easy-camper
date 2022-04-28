@@ -1,17 +1,17 @@
-.section-top { 
+.section-top__main-image { 
   display: flex;
   width: 100%;
   height: 650px;
   background: url("../img/main-image.png") center/cover;
 }
 
-.box {  
-  width: 741px;
-  height: 537px;
+.box {
+  position: relative;
+  width: 741px;  
   background-color: var(--white);  
-  margin: 384px 0 0 63px;
+  margin: -260px 0 0 63px;
   padding: 96px 156px 75px 62px;
-  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
 }
 
 .box__title {  
@@ -61,14 +61,14 @@
 }
 
 @media (max-width: 992px) {	
-  .section-top {    
+  .section-top__main-image {    
     height: 400px;
   }
 
 	.box {
-    width: 100%;
-    margin: 400px 0px 0px 0px;
-    padding: 60px 40px 75px 40px;
+    width: 100%;    
+    margin: 0;
+    padding: 60px 40px;
   }
 
   .box__title {      
