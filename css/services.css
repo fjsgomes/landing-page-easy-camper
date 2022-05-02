@@ -7,16 +7,12 @@
   margin: 80px 0px 0px 0px;
 }
 
-.contents {
-  /* display: flex; */
-  width: 395px;
-  /* flex-direction: column; */
+.contents {  
+  width: 395px;  
   margin: 60px 10px 0px 0px;
 }
 
 .container-text {
-  /* display: flex;
-  flex-direction: column; */
   margin-top: 4rem;
 }
 
@@ -42,7 +38,7 @@
 }
 
 .img__girl {
-  width: 247.5px;
+  width: 222.82px;
   height: 180px;
 }
 
@@ -52,7 +48,7 @@
 }
 
 .img__geo {
-  width: 252.89px;
+  width: 222.82px;
   height: 180px;
 }
 
@@ -68,7 +64,9 @@
 }
 
 @media (max-width: 768px) {
-  .services {    
+  .services {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }  
 }
