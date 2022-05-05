@@ -47,7 +47,7 @@
   padding: 20.5px 0px 0px 85px;
   margin: 30px 0px 60px 0px;
   background: var(--orange);
-  border: var(--orange);  
+  border: var(--orange);
 }
 
 .community-button__play {
@@ -75,7 +75,7 @@
   .community-container {
     flex-direction: column;
     margin: 0;
-  }
+  }  
 
   .community-box {
     width: auto;
@@ -108,10 +108,20 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .community-button {
+    margin-bottom: 20px;
+  }
+
+  .img_lucciano,
+  .img_cremonesi,
+  .img_beneventi {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 576px) {
   .community-button {
     width: 240px;
-  }
+  }  
 }
