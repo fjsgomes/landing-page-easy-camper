@@ -1,7 +1,6 @@
 .section-advantages {
   display: flex;
-  flex-direction: column;
-  /* width: 100%; */
+  flex-direction: column;  
   padding: 0px 110px 0px 119px;
   margin: 200px 0px 200px 0px;
 }
