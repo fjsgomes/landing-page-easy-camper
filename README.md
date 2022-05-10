@@ -1,0 +1,1 @@
+In this Backpacking project, HTML and CSS technologies were used, in addition to the BEM methodology.
