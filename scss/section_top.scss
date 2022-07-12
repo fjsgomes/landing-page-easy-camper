@@ -1,0 +1,96 @@
+.section-top__main-image { 
+  display: flex;
+  width: 100%;
+  height: 650px;
+  background: url("../img/main-image.png") center/cover;
+
+  @include media-max-width($breakpoint-large) {
+    height: 400px;
+  }
+}
+
+.box {
+  position: relative;
+  width: 741px;  
+  background-color: map-get($color, white);
+  margin: -260px 0 0 63px;
+  padding: 96px 156px 75px 62px;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+
+  @include media-max-width($breakpoint-large) {
+    width: 100%;    
+    margin: 0;
+    padding: 60px 40px;
+  }
+
+  &__title {
+    font-family: $merriweather;
+    font-weight: 700;
+    font-size: 39px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @include media-max-width($breakpoint-large) {
+      font-size: 25px;    
+    }
+  }
+  
+  .text--gray {
+    color: map-get($color, gray);
+  }
+  
+  .text--orange {
+    color: map-get($color, orange);
+  }
+  
+  &__text {  
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 60%;
+
+    @include media-max-width($breakpoint-large) {
+      font-size: 15px;
+      padding: 15px 0px 15px 0px;
+    }
+  }
+  
+  &-button {
+    display: flex;
+    width: 250px;
+    height: 65px;  
+    padding: 20.5px 0px 0px 69px;
+    background: map-get($color, orange);
+    border: map-get($color, orange);
+
+    @include media-max-width($breakpoint-large) {
+      width: 185px;    
+      padding: 20.5px 0px 0px 45px; 
+    }
+
+    &__img {
+      width: 24px;
+      height: 24px;
+
+      @include media-max-width($breakpoint-large) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    
+    &__text {
+      font-family: $montserrat;
+      font-weight: 700;  
+      font-size: 18px;
+      margin-left: 8px;
+      color: map-get($color, white);
+
+      @include media-max-width($breakpoint-large) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+.header {
+  display: flex;  
+  width: 100%;  
+  position: absolute;
+  justify-content: space-between;  
+  padding: 40px 110px 0px 122px;
+
+  @include media-max-width($breakpoint-large) {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .header-login {
+    display: flex;
+    height: 53px;
+    width: 86px;  
+    border-radius: 26.5px;
+    background-color: map-get($color, white);
+
+    @include media-max-width($breakpoint-large) {
+      width: 80px;
+      height: 50px;
+    }
+
+    &__icon {  
+      height: 1rem;
+      margin-top: 15.58px;
+      margin-left: 1rem;
+      padding-top: 9px;
+
+      @include media-max-width($breakpoint-large) {
+        margin-top: 14px;
+      }
+    }
+    
+    &__img {  
+      height: 2rem;
+      margin-top: 10px;
+      margin-left: 10px;
+
+      @include media-max-width($breakpoint-large) {
+        height: 1.8rem;
+      }
+    }
+  }
+}
+
