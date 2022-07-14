@@ -19,48 +19,21 @@
 
   .contents {  
     width: 395px;  
-    margin: 60px 10px 0px 0px;
+    margin: 60px 10px 0px 0px;  
 
-    .img__girl, &__map, &__geo {
-        width: 222.82px;
-        height: 180px;
-      }
+    .img__girl, .img__map, .img__geo {
+      width: 222.82px;
+      height: 180px;
     }
 
     .container-text {
       margin-top: 4rem;
 
+      @include texts-site;
+
       @include media-max-width($breakpoint-large) {       
           margin-top: 2rem;        
       }
-
-      .title {
-        font-family: $merriweather;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 30.17px;
-      }
-      
-      .text {
-        font-family: $montserrat;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19.5px;
-
-        &--gray {
-          color: map-get($color, gray);
-        }
-        
-        &--orange {
-          color: map-get($color, orange);
-        }
-        
-        &--bolder {
-          font-family: $montserrat;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 21.94px;
-        }
-      }
-    }    
-  }
+    }
+  }  
+}

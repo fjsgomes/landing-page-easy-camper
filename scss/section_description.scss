@@ -2,66 +2,62 @@
   display: flex;
   flex-direction: column;
   padding: 0px 81px 0px 119px;
-  margin: 150px 0px 0px 0px;  
-}
+  margin: 150px 0px 0px 0px;
 
-.description__title {  
-  font-family: var(--merriweather);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 45.25px;
-  margin-top: 0;
-}
+  @include media-max-width($breakpoint-large) {    
+    padding: 0px 40px 0px 40px;
+  } 
 
-.description-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 30px;
-}
+  .description__title {  
+    font-family: $merriweather;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45.25px;
+    margin-top: 0;
 
-.description {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin: 60px 15px 0px 0px;
-}
+    @include media-max-width($breakpoint-large) {    
+      font-size: 25px;
+    }
 
-.description-texts {
-  display: flex;
-  flex-direction: column;  
-  padding-top: 50px;
-}
+    @include media-max-width($breakpoint-medium) {
+      text-align: center;
+    }
+  }
+  
+  .description-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
 
-.img__list, .img__check,
-.img__build, .img__calendar  {
-  width: 32px;
-  height: 32px;  
-}
-
-@media (max-width: 992px) {
-  .section-description {
-    padding: 0px 40px 0px 40px;    
+    @include media-max-width($breakpoint-medium) {
+      flex-direction: column;
+      align-items: center;
   }
 
-  .description__title {
-    font-size: 25px;
-  }
-}
+    .description {
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+      margin: 60px 15px 0px 0px;
 
-@media (max-width: 768px) {
-  .description__title {
-    text-align: center;
-  }
+      @include media-max-width($breakpoint-small) {
+        width: 200px;
+    }
 
-  .description-container{
-    flex-direction: column;
-    align-items: center;
-  }
-}
+      .img__list, .img__check,
+      .img__build, .img__calendar  {
+        width: 32px;
+        height: 32px;  
+    }
 
-@media (max-width: 576px) {
-  .description {
-    width: 200px;
+      .description-texts {
+        display: flex;
+        flex-direction: column;  
+        padding-top: 50px;        
+
+        @include texts-site;
+      }
+    }
   }
 }

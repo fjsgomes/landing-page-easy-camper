@@ -3,3 +3,34 @@
     @content;  
   }
 }
+
+@mixin texts-site {
+  .title {
+    font-family: $merriweather;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30.17px;
+  }
+
+  .text {
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    
+    &--gray {
+      color: map-get($color, gray);
+    }
+           
+    &--orange {
+      color: map-get($color, orange);
+    }
+    
+    &--bolder {
+      font-family: $montserrat;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21.94px;
+    }
+  }
+}
