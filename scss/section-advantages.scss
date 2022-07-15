@@ -3,75 +3,71 @@
   flex-direction: column;  
   padding: 0px 110px 0px 119px;
   margin: 200px 0px 200px 0px;
-}
 
-.advantages__title {  
-  font-family: var(--merriweather);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 45.25px;
-  margin-top: 0;
-}
-
-.advantages-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.advantages-description {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  padding-top: 70px;  
-}
-
-.advantages-texts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding-top: 50px;
-  margin-right: 5px;
-}
-
-.img__doublesquare,
-.img__books,
-.img__magnifying  {
-  width: 32px;
-  height: 32px;  
-}
-
-@media (max-width: 992px) {
-  .section-advantages {
+  @include media-max-width($breakpoint-large) {
     padding: 0px 40px 0px 40px;
     margin: 150px 0px 150px 0px;
   }
 
-  .advantages__title {
-    font-size: 25px;
-  }
-}
+  @include texts-site;
 
-@media (max-width: 768px) {
-  .advantages-container {    
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
-  }
+  .advantages__title {      
+    font-size: 36px;
+    line-height: 45.25px;
+    margin-top: 0;
 
-  .advantages__title {
-    text-align: center;
-  }
+    @include media-max-width($breakpoint-large) {
+      font-size: 25px;
+    }
 
-  .advantages-description {
-    flex-direction: column;    
+    @include media-max-width($breakpoint-medium) {
+      text-align: center;
+    }
   }
-}
+  
+  .advantages-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-@media (max-width: 576px) {
-  .advantages-container {    
-    width: 210px;
-    margin: auto;
-  }  
+    @include media-max-width($breakpoint-medium) {
+      align-items: center;
+      justify-content: space-around;
+      margin: 0;
+    }
+
+    @include media-max-width($breakpoint-small) {
+      width: 210px;
+      margin: auto;
+    }
+
+    .advantages-description {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding-top: 70px;
+
+      @include media-max-width($breakpoint-medium) {
+        flex-direction: column;
+      }
+
+      .img__doublesquare,
+      .img__books,
+      .img__magnifying  {
+        width: 32px;
+        height: 32px;  
+      }
+
+      .advantages-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-top: 50px;
+        margin-right: 5px;
+      }
+
+      @include texts-site;
+    }
+  } 
 }

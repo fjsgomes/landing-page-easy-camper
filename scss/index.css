@@ -137,7 +137,10 @@ body {
       height: 180px; }
     .services .contents .container-text {
       margin-top: 4rem; }
-      .services .contents .container-text .title {
+      .services .contents .container-text .title,
+      .services .contents .container-text .advantages__title,
+      .services .contents .container-text .footer__title,
+      .services .contents .container-text .footer__sub-titles {
         font-family: "Merriweather", arial;
         font-weight: 700;
         font-size: 24px;
@@ -205,7 +208,10 @@ body {
         display: flex;
         flex-direction: column;
         padding-top: 50px; }
-        .section-description .description-container .description .description-texts .title {
+        .section-description .description-container .description .description-texts .title,
+        .section-description .description-container .description .description-texts .advantages__title,
+        .section-description .description-container .description .description-texts .footer__title,
+        .section-description .description-container .description .description-texts .footer__sub-titles {
           font-family: "Merriweather", arial;
           font-weight: 700;
           font-size: 24px;
@@ -309,7 +315,10 @@ body {
         .section-community .community-container .community__contents {
           flex-direction: column;
           text-align: center; } }
-      .section-community .community-container .community__contents .title {
+      .section-community .community-container .community__contents .title,
+      .section-community .community-container .community__contents .advantages__title,
+      .section-community .community-container .community__contents .footer__title,
+      .section-community .community-container .community__contents .footer__sub-titles {
         font-family: "Merriweather", arial;
         font-weight: 700;
         font-size: 24px;
@@ -344,164 +353,240 @@ body {
   flex-direction: column;
   padding: 0px 110px 0px 119px;
   margin: 200px 0px 200px 0px; }
+  @media (max-width: 992px) {
+    .section-advantages {
+      padding: 0px 40px 0px 40px;
+      margin: 150px 0px 150px 0px; } }
+  .section-advantages .title,
+  .section-advantages .advantages__title,
+  .section-advantages .footer__title,
+  .section-advantages .footer__sub-titles {
+    font-family: "Merriweather", arial;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30.17px; }
+  .section-advantages .text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px; }
+    .section-advantages .text--gray {
+      color: #848484; }
+    .section-advantages .text--orange {
+      color: #F78065; }
+    .section-advantages .text--bolder {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21.94px; }
+  .section-advantages .advantages__title {
+    font-size: 36px;
+    line-height: 45.25px;
+    margin-top: 0; }
+    @media (max-width: 992px) {
+      .section-advantages .advantages__title {
+        font-size: 25px; } }
+    @media (max-width: 768px) {
+      .section-advantages .advantages__title {
+        text-align: center; } }
+  .section-advantages .advantages-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      .section-advantages .advantages-container {
+        align-items: center;
+        justify-content: space-around;
+        margin: 0; } }
+    @media (max-width: 576px) {
+      .section-advantages .advantages-container {
+        width: 210px;
+        margin: auto; } }
+    .section-advantages .advantages-container .advantages-description {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding-top: 70px; }
+      @media (max-width: 768px) {
+        .section-advantages .advantages-container .advantages-description {
+          flex-direction: column; } }
+      .section-advantages .advantages-container .advantages-description .img__doublesquare,
+      .section-advantages .advantages-container .advantages-description .img__books,
+      .section-advantages .advantages-container .advantages-description .img__magnifying {
+        width: 32px;
+        height: 32px; }
+      .section-advantages .advantages-container .advantages-description .advantages-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-top: 50px;
+        margin-right: 5px; }
+      .section-advantages .advantages-container .advantages-description .title,
+      .section-advantages .advantages-container .advantages-description .advantages__title,
+      .section-advantages .advantages-container .advantages-description .footer__title,
+      .section-advantages .advantages-container .advantages-description .footer__sub-titles {
+        font-family: "Merriweather", arial;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30.17px; }
+      .section-advantages .advantages-container .advantages-description .text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.5px; }
+        .section-advantages .advantages-container .advantages-description .text--gray {
+          color: #848484; }
+        .section-advantages .advantages-container .advantages-description .text--orange {
+          color: #F78065; }
+        .section-advantages .advantages-container .advantages-description .text--bolder {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21.94px; }
 
-.advantages__title {
-  font-family: var(--merriweather);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 45.25px;
-  margin-top: 0; }
-
-.advantages-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-
-.advantages-description {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  padding-top: 70px; }
-
-.advantages-texts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding-top: 50px;
-  margin-right: 5px; }
-
-.img__doublesquare,
-.img__books,
-.img__magnifying {
-  width: 32px;
-  height: 32px; }
-
-@media (max-width: 992px) {
-  .section-advantages {
-    padding: 0px 40px 0px 40px;
-    margin: 150px 0px 150px 0px; }
-
-  .advantages__title {
-    font-size: 25px; } }
-@media (max-width: 768px) {
-  .advantages-container {
-    align-items: center;
-    justify-content: space-around;
-    margin: 0; }
-
-  .advantages__title {
-    text-align: center; }
-
-  .advantages-description {
-    flex-direction: column; } }
-@media (max-width: 576px) {
-  .advantages-container {
-    width: 210px;
-    margin: auto; } }
 .footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: var(--light);
+  background: #F7F7F7;
   padding: 80px 110px 40px 119px; }
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 50px; }
-
-.footer__titles {
-  width: 304px; }
-
-.footer__sub-title {
-  font-family: var(--merriweather);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30.17px;
-  color: var(--black); }
-
-.footer__title {
-  font-family: var(--merriweather);
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60.34px;
-  color: var(--black);
-  margin-top: 0px; }
-
-.footer__box {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 0.6;
-  flex-wrap: wrap; }
-
-.footer__lists-block {
-  list-style: none; }
-
-.footer__sub-titles {
-  font-family: var(--merriweather);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22.63px;
-  color: var(--black);
-  margin-bottom: 24px; }
-
-.footer__list {
-  font-family: var(--montserrat);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17.07px;
-  color: var(--black);
-  margin-bottom: 24px; }
-
-.horizontal__line {
-  border: 1px solid var(--black);
-  opacity: 20%; }
-
-.footer__block-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px; }
-
-.footer__links {
-  display: flex;
-  list-style: none; }
-
-.footer__text {
-  font-family: var(--montserrat);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17.07px;
-  color: var(--black);
-  padding-left: 50px; }
-
-@media (max-width: 992px) {
-  .footer {
-    padding: 50px 40px 0px 40px;
-    justify-content: space-around; }
-
-  .footer__lists-block {
-    padding: 0;
-    margin: 0px 5px 0px 5px; } }
-@media (max-width: 768px) {
-  .footer {
-    padding: 40px 40px 0px 40px; }
-
-  .footer__container {
-    flex-direction: column;
-    margin: 0;
-    padding-bottom: 20px; }
-
-  .footer__titles {
-    width: auto; }
-
-  .footer__title {
-    font-size: 38px; }
-
-  .footer__sub-title {
-    margin-top: 0; }
-
-  .footer__links {
-    display: none; } }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 50px 40px 0px 40px;
+      justify-content: space-around; } }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 40px 0px 40px; } }
+  .footer .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px; }
+    @media (max-width: 768px) {
+      .footer .footer__container {
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 20px; } }
+    .footer .footer__container .footer__titles {
+      width: 304px; }
+      @media (max-width: 768px) {
+        .footer .footer__container .footer__titles {
+          width: auto; } }
+      .footer .footer__container .footer__titles .footer__sub-title {
+        font-family: "Merriweather", arial;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30.17px;
+        color: #000000; }
+        @media (max-width: 768px) {
+          .footer .footer__container .footer__titles .footer__sub-title {
+            margin-top: 0; } }
+      .footer .footer__container .footer__titles .title,
+      .footer .footer__container .footer__titles .advantages__title,
+      .footer .footer__container .footer__titles .footer__title,
+      .footer .footer__container .footer__titles .footer__sub-titles {
+        font-family: "Merriweather", arial;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30.17px; }
+      .footer .footer__container .footer__titles .text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.5px; }
+        .footer .footer__container .footer__titles .text--gray {
+          color: #848484; }
+        .footer .footer__container .footer__titles .text--orange {
+          color: #F78065; }
+        .footer .footer__container .footer__titles .text--bolder {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21.94px; }
+      .footer .footer__container .footer__titles .footer__title {
+        font-size: 48px;
+        line-height: 60.34px;
+        color: #000000;
+        margin-top: 0px; }
+        @media (max-width: 768px) {
+          .footer .footer__container .footer__titles .footer__title {
+            font-size: 38px; } }
+    .footer .footer__container .footer__box {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 0.6;
+      flex-wrap: wrap; }
+      .footer .footer__container .footer__box .footer__lists-block {
+        list-style: none; }
+        @media (max-width: 992px) {
+          .footer .footer__container .footer__box .footer__lists-block {
+            padding: 0;
+            margin: 0px 5px 0px 5px; } }
+        .footer .footer__container .footer__box .footer__lists-block .title,
+        .footer .footer__container .footer__box .footer__lists-block .advantages__title,
+        .footer .footer__container .footer__box .footer__lists-block .footer__title,
+        .footer .footer__container .footer__box .footer__lists-block .footer__sub-titles {
+          font-family: "Merriweather", arial;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 30.17px; }
+        .footer .footer__container .footer__box .footer__lists-block .text {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19.5px; }
+          .footer .footer__container .footer__box .footer__lists-block .text--gray {
+            color: #848484; }
+          .footer .footer__container .footer__box .footer__lists-block .text--orange {
+            color: #F78065; }
+          .footer .footer__container .footer__box .footer__lists-block .text--bolder {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21.94px; }
+        .footer .footer__container .footer__box .footer__lists-block .footer__sub-titles {
+          font-size: 18px;
+          line-height: 22.63px;
+          color: #000000;
+          margin-bottom: 24px; }
+        .footer .footer__container .footer__box .footer__lists-block .footer__list,
+        .footer .footer__container .footer__box .footer__lists-block .footer__text {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17.07px;
+          color: #000000;
+          margin-bottom: 24px; }
+  .footer .horizontal__line {
+    border: 1px solid #000000;
+    opacity: 20%; }
+  .footer .footer__block-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px; }
+    .footer .footer__block-nav .footer__list,
+    .footer .footer__block-nav .footer__text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17.07px;
+      color: #000000;
+      margin-bottom: 24px; }
+    .footer .footer__block-nav .footer__links {
+      display: flex;
+      list-style: none; }
+      @media (max-width: 768px) {
+        .footer .footer__block-nav .footer__links {
+          display: none; } }
+      .footer .footer__block-nav .footer__links .footer__list,
+      .footer .footer__block-nav .footer__links .footer__text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17.07px;
+        color: #000000;
+        margin-bottom: 24px; }
+      .footer .footer__block-nav .footer__links .footer__text {
+        padding-left: 50px; }
 
 /*# sourceMappingURL=index.css.map */

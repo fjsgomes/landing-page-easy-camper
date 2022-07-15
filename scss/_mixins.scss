@@ -5,7 +5,10 @@
 }
 
 @mixin texts-site {
-  .title {
+  .title,
+  .advantages__title,
+  .footer__title,
+  .footer__sub-titles {
     font-family: $merriweather;
     font-weight: 700;
     font-size: 24px;
@@ -32,5 +35,17 @@
       font-size: 18px;
       line-height: 21.94px;
     }
+  }
+}
+
+@mixin text-footer {
+  .footer__list,
+  .footer__text {  
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: map-get($color, black);
+    margin-bottom: 24px;
   }
 }
