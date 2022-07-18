@@ -38,7 +38,7 @@
       
       @include texts-site;
 
-      .community__title {       
+      .community__title {
         font-size: 36px;
         line-height: 45.25px;
         padding-bottom: 15px;
@@ -51,7 +51,7 @@
         @include media-max-width($breakpoint-medium) {
           text-align: center;
         }
-      }
+      }      
 
       .community-button {
         display: flex;
@@ -74,9 +74,12 @@
           width: 14.15px;
           height: 12.36px;
           margin-top: 5px;
-        }
+        }        
         
-        &__text {          
+        &__text {
+          font-family: $montserrat;
+          font-weight: 700;
+          font-size: 18px;
           margin-left: 8px;
           color: map-get($color, white);
         }

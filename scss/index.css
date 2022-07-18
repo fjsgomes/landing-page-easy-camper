@@ -138,6 +138,7 @@ body {
     .services .contents .container-text {
       margin-top: 4rem; }
       .services .contents .container-text .title,
+      .services .contents .container-text .community__title,
       .services .contents .container-text .advantages__title,
       .services .contents .container-text .footer__title,
       .services .contents .container-text .footer__sub-titles {
@@ -209,6 +210,7 @@ body {
         flex-direction: column;
         padding-top: 50px; }
         .section-description .description-container .description .description-texts .title,
+        .section-description .description-container .description .description-texts .community__title,
         .section-description .description-container .description .description-texts .advantages__title,
         .section-description .description-container .description .description-texts .footer__title,
         .section-description .description-container .description .description-texts .footer__sub-titles {
@@ -263,6 +265,7 @@ body {
           align-items: center;
           margin: 0; } }
       .section-community .community-container .community-box .title,
+      .section-community .community-container .community-box .community__title,
       .section-community .community-container .community-box .advantages__title,
       .section-community .community-container .community-box .footer__title,
       .section-community .community-container .community-box .footer__sub-titles {
@@ -314,6 +317,9 @@ body {
           height: 12.36px;
           margin-top: 5px; }
         .section-community .community-container .community-box .community-button__text {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
           margin-left: 8px;
           color: #ffffff; }
     .section-community .community-container .community__contents {
@@ -326,6 +332,7 @@ body {
           flex-direction: column;
           text-align: center; } }
       .section-community .community-container .community__contents .title,
+      .section-community .community-container .community__contents .community__title,
       .section-community .community-container .community__contents .advantages__title,
       .section-community .community-container .community__contents .footer__title,
       .section-community .community-container .community__contents .footer__sub-titles {
@@ -368,6 +375,7 @@ body {
       padding: 0px 40px 0px 40px;
       margin: 150px 0px 150px 0px; } }
   .section-advantages .title,
+  .section-advantages .community__title,
   .section-advantages .advantages__title,
   .section-advantages .footer__title,
   .section-advantages .footer__sub-titles {
@@ -433,6 +441,7 @@ body {
         padding-top: 50px;
         margin-right: 5px; }
       .section-advantages .advantages-container .advantages-description .title,
+      .section-advantages .advantages-container .advantages-description .community__title,
       .section-advantages .advantages-container .advantages-description .advantages__title,
       .section-advantages .advantages-container .advantages-description .footer__title,
       .section-advantages .advantages-container .advantages-description .footer__sub-titles {
@@ -492,6 +501,7 @@ body {
           .footer .footer__container .footer__titles .footer__sub-title {
             margin-top: 0; } }
       .footer .footer__container .footer__titles .title,
+      .footer .footer__container .footer__titles .community__title,
       .footer .footer__container .footer__titles .advantages__title,
       .footer .footer__container .footer__titles .footer__title,
       .footer .footer__container .footer__titles .footer__sub-titles {
@@ -533,6 +543,7 @@ body {
             padding: 0;
             margin: 0px 5px 0px 5px; } }
         .footer .footer__container .footer__box .footer__lists-block .title,
+        .footer .footer__container .footer__box .footer__lists-block .community__title,
         .footer .footer__container .footer__box .footer__lists-block .advantages__title,
         .footer .footer__container .footer__box .footer__lists-block .footer__title,
         .footer .footer__container .footer__box .footer__lists-block .footer__sub-titles {
