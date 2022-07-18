@@ -262,9 +262,29 @@ body {
           text-align: center;
           align-items: center;
           margin: 0; } }
-      .section-community .community-container .community-box .community__title {
+      .section-community .community-container .community-box .title,
+      .section-community .community-container .community-box .advantages__title,
+      .section-community .community-container .community-box .footer__title,
+      .section-community .community-container .community-box .footer__sub-titles {
         font-family: "Merriweather", arial;
         font-weight: 700;
+        font-size: 24px;
+        line-height: 30.17px; }
+      .section-community .community-container .community-box .text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.5px; }
+        .section-community .community-container .community-box .text--gray {
+          color: #848484; }
+        .section-community .community-container .community-box .text--orange {
+          color: #F78065; }
+        .section-community .community-container .community-box .text--bolder {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21.94px; }
+      .section-community .community-container .community-box .community__title {
         font-size: 36px;
         line-height: 45.25px;
         padding-bottom: 15px;
@@ -275,13 +295,6 @@ body {
         @media (max-width: 768px) {
           .section-community .community-container .community-box .community__title {
             text-align: center; } }
-      .section-community .community-container .community-box .text {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19.5px; }
-        .section-community .community-container .community-box .text--gray {
-          color: #848484; }
       .section-community .community-container .community-box .community-button {
         display: flex;
         width: 250px;
@@ -301,9 +314,6 @@ body {
           height: 12.36px;
           margin-top: 5px; }
         .section-community .community-container .community-box .community-button__text {
-          font-family: "Montserrat", sans-serif;
-          font-weight: 700;
-          font-size: 18px;
           margin-left: 8px;
           color: #ffffff; }
     .section-community .community-container .community__contents {
